@@ -1,0 +1,10 @@
+##Odd Or Even Solutions
+def oddEven(num):
+	mod = int(num)%2
+	if mod>0:
+		print(str(num) + " You picked an odd number.")
+	else:
+		print(str(num) + " You picked an even number.")
+		
+#Call Function		
+#oddEven(99)

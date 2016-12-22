@@ -1,0 +1,28 @@
+
+
+Normal:
+>>> __author__='Matin Rahman'
+>>> num =int(input("Enter a number to divide: "))
+Enter a number to divide: 44
+>>> listRange = list(range(1,num+1))
+>>> divisorList = []
+>>> for number in listRange:
+	if num % number == 0:
+		divisorList.append(number
+		
+ >>>  print(divisorList)
+ 
+ Functional:
+ 
+>>> def divList(num):
+	__author__='Matin Rahman'
+	listRange = list(range(1,num+1))
+	divisorList = []
+	for number in listRange:
+		if num % number == 0:
+			divisorList.append(number)
+	print('Divisors List: ',divisorList)
+
+	
+>>> divList(32)
+Divisors List:  [1, 2, 4, 8, 16, 32]

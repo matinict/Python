@@ -11,7 +11,7 @@ def decodeWebPage():
 	base_url=input('Enter Url(ex. http://www.nytimes.com): ')
 	r = requests.get(base_url)
 	soup = BeautifulSoup(r.text)	
-	for story_heading in soup.find_all(class_= {'story-heading','default'}):
+	for story_heading in soup.find_all(class_= {'story-heading','default','title'}):
 		if story_heading.a:
 			print(story_heading.a.text.replace("\n"," ").strip())
 		else:
@@ -19,3 +19,5 @@ def decodeWebPage():
 			
 ## >>> decodeWebPage()
 ## Enter Url(ex. http://www.nytimes.com): http://bangla.bdnews24.com
+## >>> decodeWebPage()
+## Enter Url(ex. http://www.nytimes.com): http://www.prothom-alo.com

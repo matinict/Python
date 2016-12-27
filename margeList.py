@@ -19,3 +19,5 @@
 
 	
 ## >>> margeList()
+## Enter a list of numbers, SEPERATED by WHITE SPACE(3 5 66 etc.): 1 1 2 2 3 4  5  6 6 77 88
+## ['1', '2', '3', '4', '5', '6', '77', '88']

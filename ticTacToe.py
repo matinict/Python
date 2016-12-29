@@ -184,3 +184,5 @@ def ticTacToe():
 
 		if not playAgain():
 			break
+## >>> ticTacToe()
+## Do you want to be X or O?X

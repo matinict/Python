@@ -1,0 +1,100 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ── Environment ───────────────────────────────────────────────────────────────
+.env
+.venv/
+.vscode/
+venv/
+.python-version
+push.sh
+
+# Ignore all directories starting with a dot (e.g., .xyz/, .pytest_cache/, etc.)
+.*/
+
+# ── runtime ───────────────────────────────────────────────────────────────
+# 🔥 MAIN RUNTIME FOLDER
+.runtime/
+
+
+# optional safety
+*.env
+*.log
+*.mp4
+*.mp3
+*.geanyprj
+
+
+# ── CrewAI ────────────────────────────────────────────────────────────────────
+.crewai/
+
+# ── CF2 Flow — Generated outputs ──────────────────────────────────────────────
+output/
+log/
+*.lock
+
+# ── Media (generated, never commit) ───────────────────────────────────────────
+*.mp4
+*.mp3
+*.gif
+*.webp
+
+
+
+# ── Models (large binaries) ───────────────────────────────────────────────────
+models/
+**/*.onnx
+**/*.onnx.json
+**/*.gguf
+
+# ── Images (generated thumbnails only — keep data/img source assets) ──────────
+output/**/*.jpg
+output/**/*.jpeg
+output/**/*.png
+
+# ── Debate generated scripts ──────────────────────────────────────────────────
+output/*/propose*.md
+output/*/oppose*.md
+output/*/decide*.md
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db__pycache__/
+*.pyc
+*.bak
+!.githooks/
+.models/
+!assets/voices/*.wav
+*.avi
+*.mov
+*.mkv
+*.pt
+*.onnx
+*.bin
+*.weights
+*.npy
+*.tar
+*.gz
+time
+time
+
+# Local patch/recovery debris
+*.bak
+*.bak.json
+*.before_*
+
+# footprint CLI guard (outputs belong in .runtime/output)
+footprint_output/
+*.pre-*
+
+# backups: never commit
+*.bak*
+data/db/**/*.bak*
+
+# backups: never commit
+*.bak*
+data/db/**/*.bak*
